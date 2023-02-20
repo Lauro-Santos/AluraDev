@@ -1,0 +1,65 @@
+/*
+  Author: Lauro Santos
+*/
+
+.hljs {
+    background: none;
+    color: #f7f7f7;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #777;
+}
+
+.hljs-tag {
+    color: #a7a7a7;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-regexp,
+.hljs-meta,
+.hljs-number,
+.hljs-built_in,
+.hljs-literal,
+.hljs-params,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-deletion {
+    color: #23deec;
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-type,
+.hljs-attribute {
+    color: #d1c62d;
+}
+
+.hljs-name,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #d88;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-string,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #cf7e31;
+}

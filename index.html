@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDEV</title>
+
+    <link rel="stylesheet" href="assets/css/soft-dark_code.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <img class="logo" src="assets/img/Logo.svg" alt="Logo da AluraDEV">
+            <input class="barra-de-pesquisa" type="search" placeholder="Busque por algo">
+            <a class="perfil" href="#" aria-label="Perfil"><img class="perfil__imagem" src="assets/img/avatar.jpg"
+                    alt="Avatar"> Nome</a>
+        </nav>
+    </header>
+    <main class="principal__home">
+        <nav class="menu">
+            <h3 class="menu__titulo">Menu</h3>
+            <a class="menu__botao ativo" href="index.html"><span class="icon__container"><i
+                        class="fa-solid fa-code"></i></span> Editor de código</a>
+            <a class="menu__botao" href="pages/abaComunidade.html"><span class="icon__container"><i
+                        class="fa-solid fa-users"></i></span> Comunidade</a>
+        </nav>
+        <section class="editor__container">
+            <div class="editor__fundo" data-fondoEditor>
+                <div class="editor__container-escrita">
+                    <span class="bolas"><svg width="52" height="12" viewBox="0 0 52 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="#FF5F56" />
+                            <circle cx="26" cy="6" r="6" fill="#FFBD2E" />
+                            <circle cx="46" cy="6" r="6" fill="#27C93F" />
+                        </svg>
+                    </span>
+                    <div class="editor-wraper" data-editorDeCodigo>
+                        <code class="editor hljs" contenteditable="true"
+                            aria-label="Editor de código" autofocus></code>
+                    </div>
+                </div>
+            </div>
+            <button class="botao-highlight" data-aplicarHighlight>Visualizar com o highlight</button>
+        </section>
+        <form class="configuracoes-projeto__container">
+            <h3>Seu projeto</h3>
+            <input type="text" class="configuracoes-projeto__texto titulo" placeholder="Nome do seu projeto">
+            <!--<input type="text" class="configuracoes-projeto__texto descricao" placeholder="Descrição do seu projeto">-->
+            <textarea name="" id="" class="configuracoes-projeto__texto descricao"
+                placeholder="Descrição do seu projeto"></textarea>
+            <h3>Personalização</h3>
+            <select class="configuracoes-projeto__selecao-linguagem" name="linguagem" data-linguagem>
+                <option value="JavaScript">JavaScript</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+            </select>
+            <input type="color" class="configuracoes-projeto__cor" value="#5081fb" data-seletorDeCor>
+            <input type="submit" value="Salvar projeto" class="configuracoes-projeto__botao">
+        </form>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

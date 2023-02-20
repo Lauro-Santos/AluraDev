@@ -1,0 +1,8 @@
+.principal__home {
+    display: grid;
+    grid-template: 'menu' 'editor__container' 'configuracoes-projeto__container' / 244px 57% 25.8%;
+}
+
+.principal__feed {
+    display: grid;
+}

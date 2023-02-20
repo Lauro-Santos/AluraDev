@@ -1,0 +1,59 @@
+.cabecalho {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 118px;
+}
+
+.barra-de-pesquisa {
+    background-color: var(--cor-caixas-de-texto);
+    border: none;
+    border-radius: 8px;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-texto-padrao);
+    height: 56px;
+    padding: 16px 14px;
+    width: 100%;
+}
+
+.barra-de-pesquisa::placeholder {
+    color: var(--cor-fonte);
+    padding: 16px 14px;
+}
+
+.barra-de-pesquisa:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.perfil {
+    border-radius: 8px;
+    align-items: center;
+    color: var(--cor-fonte);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 218px;
+    padding: 8px;
+    text-decoration: none;
+    transition: .3s all;
+    width: 114px;
+}
+
+.perfil:hover {
+    background-color: var(--cor-elemento-hover);
+}
+
+.perfil__imagem {
+    border-radius: 100%;
+    height: 32px;
+    object-fit: cover;
+    object-position: center;
+    width: 32px;
+    margin-right: 20px;
+}
