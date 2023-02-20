@@ -23,7 +23,7 @@
 }
 
 .menu__botao .icon__container {
-    background-color: var(--cor-botao-inativo);
+    background-color: var(--cor-icone-inativo);
     border-radius: 16px;
     padding: 15px;
     margin-right: 10px;
@@ -35,9 +35,9 @@
 }
 
 .ativo .icon__container{
-    background-color: var(--cor-botao-ativo);
+    background-color: var(--cor-icone-ativo);
 }
 
 .menu__botao:hover .icon__container {
-    background-color: var(--cor-botao-hover);
+    background-color: var(--cor-icone-hover);
 }

@@ -20,10 +20,14 @@
     --cor-caixas-de-texto: rgba(255, 255, 255, 0.16);
     --cor-caixas-de-texto-hover: rgba(255, 255, 255, 0.24);
 
-    --cor-botao-ativo: #5081fb;
-    --cor-botao-hover: rgba(80, 129, 251, 0.64);
-    --cor-botao-inativo: rgba(80, 129, 251, 0.16);
-    --cor-borda-botao-inativo: rgba(80, 129, 251, 0.722);
+    --cor-icone-ativo: #5081fb;
+    --cor-icone-hover: rgba(80, 129, 251, 0.64);
+    --cor-icone-inativo: rgba(80, 129, 251, 0.16);
+
+    --cor-botao-ativo: #96B9FD;
+    --cor-botao-inativo: #5081FB;
+    --cor-botao-hover: #7BA4FC;
+    --cor-borda-botao: rgba(80, 129, 251, 0.722);
 
     --cor-botao-alternativo-ativo: rgba(80, 129, 251, 0.239);
     --cor-botao-alternativo-hover: rgba(80, 129, 251, 0.161);
