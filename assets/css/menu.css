@@ -1,43 +1,56 @@
 .menu {
     align-items: start;
+    background-color: var(--cor-de-fundo);
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 20px;
+    position: fixed;
+    top: 120px;
 }
 
-.menu__titulo {
-    color: var(--cor-fonte-ativa);
-    letter-spacing: 0.4em;
+h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.4rem;
     text-transform: uppercase;
-    margin-top: 20px;
 }
 
-.menu__botao {
-    color: var(--cor-fonte-inativa);
+.botao__menu {
+    align-items: center;
+    color: rgb(255, 255, 255, 0.72);
+    display: flex;
+    gap: 16px;
     text-decoration: none;
-    margin-top: 50px;
-    transition: .3s all;
+    transition: all .3s;
 }
 
-.menu__botao:hover {
-    color: var(--cor-fonte-hover);
-}
-
-.menu__botao .icon__container {
-    background-color: var(--cor-icone-inativo);
+.icone__menu {
+    align-items: center;
+    background-color: var(--cor-elemento-sec-normal);
     border-radius: 16px;
-    padding: 15px;
-    margin-right: 10px;
-    transition: .3s all;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+    transition: all .3s;
 }
 
-.ativo {
-    color: var(--cor-fonte-ativa);
+.botao__menu:hover {
+    color: #ffffff;
 }
 
-.ativo .icon__container{
-    background-color: var(--cor-icone-ativo);
+.botao__menu:hover .icone__menu{
+    background: var(--cor-elemento-hover);
 }
 
-.menu__botao:hover .icon__container {
-    background-color: var(--cor-icone-hover);
+.ativa {
+    color: #ffffff;
+}
+
+.ativa .icone__menu{
+    background: var(--cor-elemento-normal);
 }

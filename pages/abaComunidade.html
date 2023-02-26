@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDEV | Comunidade</title>
 
+    <link rel="shortcut icon" type="image/svg" href="../assets/img/Logo.svg" />
+
+    <!--importacao de tema-->
+    <link rel="stylesheet" href="../assets/css/highlight/equilibrium-gray-dark.css">
+    <!--importacao de folha de estilo-->
     <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
+
 <body>
     <header>
-        <nav class="cabecalho">
-            <img class="logo" src="../assets/img/Logo.svg" alt="Logo da AluraDEV">
-            <input class="barra-de-pesquisa" type="search" placeholder="Busque por algo">
-            <a class="perfil" href="#" aria-label="Perfil"><img class="perfil__imagem" src="../assets/img/avatar.jpg"
-                    alt="Avatar"> Nome</a>
-        </nav>
+        <section class="cabecalho">
+            <img class="logo__cabecalho" src="../assets/img/Logo.svg" alt="Logo AluraDEV">
+            <input type="search" class="pesquisa__cabecalho" placeholder="Busque por algo">
+            <div class="perfil__cabecalho" aria-label="Perfil">
+                <img class="imagem__perfil" src="../assets/img/avatar.jpg" alt="Foto de perfil">
+                <p class="nome__perfil">Nome</p>
+            </div>
+        </section>
+        <section class="menu">
+            <h3>Menu</h3>
+            <a href="../index.html" class="botao__menu">
+                <span class="icone__menu"><i class="fa-solid fa-code"></i></span>
+                <p>Editor de código</p>
+            </a>
+            <a href="abaComunidade.html" class="botao__menu ativa">
+                <span class="icone__menu"><i class="fa-solid fa-users"></i></span>
+                <p>Comunidade</p>
+            </a>
+        </section>
     </header>
-    <main class="principal__feed">
-        <nav class="menu">
-            <h3 class="menu__titulo">Menu</h3>
-            <a class="menu__botao" href="../index.html"><span class="icon__container"><i class="fa-solid fa-code"></i></span> Editor de código</a>
-            <a class="menu__botao ativo" href="pages/abaComunidade.html"><span class="icon__container"><i class="fa-solid fa-users"></i></span> Comunidade</a>
-        </nav>
-        <section class="feed__container">
-            
+    <main>
+        <section class="feed">
+
+            <div class="card__container">
+                <div class="codigo__container" style="background: #ff0000;">
+                <pre><code class="codigo hlsj javascript">const pluckDeep = key => obj =>
+key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res =>
+fns.reduce((accum, next) => next(accum), res)
+                            
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ?
+        go(f, res[1], acc.concat([res[0]])) : acc;
+    }   return go(f, seed, [])
+}</code></pre>
+                </div>
+                <div class="descricao">
+                    <h2>Título do projeto</h2>
+                    <p>Essa é a descrição do meu projeto.</p>
+                </div>
+                <div class="acoes">
+                    <div>
+                        <span><i class="fa-solid fa-comment"></i> 9</span>
+                        <span><i class="fa-solid fa-heart"></i> 9</span>
+                    </div>
+                    <a href="#" class="user">
+                        <img src="https://assets.afcdn.com/story/20160810/952148_w1888h1060c1cx511cy250.jpg"
+                            width="24px" height="24px">
+                        <p>@Nome</p>
+                    </a>
+                </div>
+            </div>
+
         </section>
     </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
 </body>
+
 </html>

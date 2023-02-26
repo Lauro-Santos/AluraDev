@@ -1,48 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css');
 
-@import url('reset.css');
-@import url('normalize.css');
-@import url('cabecalho.css');
-@import url('principal.css');
-@import url('menu.css');
-@import url('editor.css');
-@import url('configuracoesProjeto.css');
+@import url(normalize.css);
+@import url(reset.css);
 
+@import url(cabecalho.css);
+@import url(menu.css);
+
+@import url(editor.css);
+@import url(configuracao.css);
+
+@import url(feed.css);
 
 :root {
-    --cor-fundo: #051d3b;
+    /*principais*/
+    /*cores*/
+    --cor-de-fundo: #051D3B;
+    --cor-elemento-normal: #5081FB;
+    --cor-elemento-hover: #7BA4FC;
+    --cor-elemento-focus: #96B9FD;
+    /*borda*/
+    --borda: 4px solid rgba(80, 129, 251, 0.72);
 
-    --cor-fonte-ativa: #ffffff;
-    --cor-fonte-inativa: rgba(255, 255, 255, 0.50);
-    --cor-fonte-hover: rgba(255, 255, 255, 0.72);
+    /*secundarias*/
+    /*cores*/
+    --cor-elemento-sec-normal: rgb(80, 129, 251, 0.08);
+    --cor-elemento-sec-hover: rgb(80, 129, 251, 0.16);
+    --cor-elemento-sec-inativos: rgb(80, 129, 251, 0.24);
+    /*borda*/
+    --sec-borda: 4px solid rgba(80, 129, 251, 0.24);
 
-    --cor-caixas-de-texto: rgba(255, 255, 255, 0.16);
-    --cor-caixas-de-texto-hover: rgba(255, 255, 255, 0.24);
+    --font-code: 'Roboto Mono';
 
-    --cor-icone-ativo: #5081fb;
-    --cor-icone-hover: rgba(80, 129, 251, 0.64);
-    --cor-icone-inativo: rgba(80, 129, 251, 0.16);
-
-    --cor-botao-ativo: #96B9FD;
-    --cor-botao-inativo: #5081FB;
-    --cor-botao-hover: #7BA4FC;
-    --cor-borda-botao: rgba(80, 129, 251, 0.722);
-
-    --cor-botao-alternativo-ativo: rgba(80, 129, 251, 0.239);
-    --cor-botao-alternativo-hover: rgba(80, 129, 251, 0.161);
-    --cor-botao-alternativo-inativo: rgba(80, 129, 251, 0.078);
-    --cor-borda-botao-alternativo-inativo: rgba(80, 129, 251, 0.239);
-
-    --cor-elemento-hover: rgba(255, 255, 255, 0.08);
-
-    --fonte-texto-padrao: 'Inter';
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-fonte-ativa);
-    font-family: var(--fonte-texto-padrao), sans-serif;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
-    padding: 32px 32px 0 32px;
 }
+
+main {
+    align-items: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--cor-elemento-sec-normal);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor-elemento-sec-inativos);
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-elemento-sec-hover);
+  }

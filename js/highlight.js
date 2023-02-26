@@ -7,8 +7,8 @@ function aplicarHighlight() {
     areaDoCodigo.innerHTML = `
     <code class="editor hljs ${linguagem.value}" contenteditable="true" aria-label="Editor de código">function test(){}</code>
     `
-    areaDoCodigo.querySelector('code').textContent = codigo
-    hljs.highlightElement(areaDoCodigo.querySelector('code'))
+    areaDoCodigo.querySelector('.editor').textContent = codigo
+    hljs.highlightElement(areaDoCodigo.querySelector('.editor'))
 }
 
 btnHighlight.addEventListener('click', () => {

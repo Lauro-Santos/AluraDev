@@ -1,0 +1,123 @@
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 344px;
+    margin-top: 120px;
+    padding-right: 32px;
+    width: 100%;
+}
+
+.card__container {
+    border-radius: 8px;
+    width: 470px;
+    margin-bottom: 23px;
+}
+
+.card__container:nth-child(2n+1) {
+    margin-right: 23px;
+}
+
+.codigo__container {
+    border-radius: 8px;
+    padding: 10px 24px;
+    top: 0;
+}
+
+.codigo {
+    display: block;
+    background: #141414;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    font-family: var(--font-code, monospace);
+    font-size: 11px;
+    padding: 20px;
+    height: 240px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+}
+
+.codigo:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.descricao {
+    color: #ffffff;
+    padding: 24px 0 24px 24px;
+    background-color: rgb(0, 0, 0, 0.16);
+    border-radius: 0 0 8px 8px;
+}
+
+.descricao h2 {
+    margin-bottom: 8px;
+}
+
+.descricao p {
+    margin-bottom: 0;
+}
+
+.acoes {
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.16);
+    border-radius: 0 0 8px 8px;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    opacity: 0;
+    padding-bottom: 24px;
+    transition: all .4s;
+    width: 470px;
+}
+
+.acoes span {
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.acoes span:hover {
+    background-color: rgb(255, 255, 255, 0.08);
+}
+
+.acoes span:active {
+    background-color: rgb(255, 255, 255, 0.16);
+}
+
+.acoes span:nth-child(2n):hover i {
+    color: #fa6868;
+}
+
+.acoes span:nth-child(2n):active i {
+    color: #ff0000;
+}
+
+.acoes span:first-child {
+    margin-right: 8px;
+}
+
+.acoes .user {
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 24px;
+}
+
+.acoes img {
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 8px;
+}
+
+.card__container:hover .acoes {
+    bottom: -74px;
+    opacity: 100%;
+}
+
+.card__container:hover .descricao {
+    border-radius: 0;
+}
