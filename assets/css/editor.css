@@ -1,5 +1,5 @@
 .areaDeEdicao {
-    margin-left: 344px;
+    margin-left: 340px;
     margin-top: 120px;
     width: 100%;
 }
@@ -51,7 +51,7 @@
     border-radius: 8px;
     color: #ffffff;
     height: 56px;
-    margin-top: 32px;
+    margin-top: 30px;
     width: 100%;
     transition: all .3s;
 }
