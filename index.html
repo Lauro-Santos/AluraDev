@@ -42,19 +42,18 @@
         <section class="areaDeEdicao">
 
             <!--    -Editor de codigo-    -->
-            <div class="editor__container">
-                <div class="editor-wraper">
-
-                    <span class="bulets">
+            <div class="editor__container" data-fondoEditor>
+                <span class="bulets">
                         <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="6" cy="6" r="6" fill="#FF5F56" />
                             <circle cx="26" cy="6" r="6" fill="#FFBD2E" />
                             <circle cx="46" cy="6" r="6" fill="#27C93F" />
                         </svg>
                     </span>
-
+                <div class="editor-wraper" data-areaDoCodigo>
+                    
                     <!--    -Editor-    -->
-                    <code class="editor hljs" contenteditable="true" aria-label="Editor de código" autofocus data-editor></code>
+                    <code class="editor hljs javascript" aria-label="Editor de código" autofocus contenteditable="true" spellcheck="true" data-editor></code>
                 
                 </div>
             </div>
@@ -73,13 +72,15 @@
                 <option value="CSS">CSS</option>
                 <option value="HTML">HTML</option>
             </select>
-            <input type="color" id="" class="seletor-de-cor__projeto" value="#5081FB">
+            <input type="color" id="" class="seletor-de-cor__projeto" value="#5081FB" data-seletorDeCor>
             <button class="btn-salvar__projeto">Salvar projeto</button>
         </section>
 
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="js/highlight.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
