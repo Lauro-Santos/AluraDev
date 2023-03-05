@@ -44,27 +44,31 @@
             <!--    -Editor de codigo-    -->
             <div class="editor__container" data-fondoEditor>
                 <span class="bulets">
-                        <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="6" fill="#FF5F56" />
-                            <circle cx="26" cy="6" r="6" fill="#FFBD2E" />
-                            <circle cx="46" cy="6" r="6" fill="#27C93F" />
-                        </svg>
-                    </span>
+                    <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5F56" />
+                        <circle cx="26" cy="6" r="6" fill="#FFBD2E" />
+                        <circle cx="46" cy="6" r="6" fill="#27C93F" />
+                    </svg>
+                </span>
                 <div class="editor-wraper" data-areaDoCodigo>
-                    
+
                     <!--    -Editor-    -->
-                    <code class="editor hljs javascript" aria-label="Editor de código" autofocus contenteditable="true" spellcheck="true" data-editor></code>
-                
+                    <pre><code class="editor hljs javascript" aria-label="Editor de código"
+                    autofocus contenteditable="true" spellcheck="true" data-editor></code></pre>
+
                 </div>
             </div>
-            <button class="botao-highlight" data-aplicarHighlight>Visualizar com o highlight</button>
+            <div class="btn-container">
+                <button class="botao-highlight" data-aplicarHighlight>Visualizar com o highlight</button>
+                <button class="botao-highlight" data-exportar>Exprotar</button>
+            </div>
 
         </section>
 
         <section class="projeto__configuracao">
             <p>Seu projeto</p>
-            <input type="text" id="" class="nome__projeto" placeholder="Nome do seu projeto" maxlength="60">
-            <textarea  id="" class="descricao__projeto" placeholder="Descrição do seu projeto"></textarea>
+            <input type="text" class="nome__projeto" placeholder="Nome do seu projeto" maxlength="60" data-nome>
+            <textarea class="descricao__projeto" placeholder="Descrição do seu projeto" data-descricao></textarea>
 
             <p>Personalização</p>
             <select class="projeto__selecao-linguagem" name="linguagem" data-linguagem>
@@ -73,7 +77,7 @@
                 <option value="HTML">HTML</option>
             </select>
             <input type="color" id="" class="seletor-de-cor__projeto" value="#5081FB" data-seletorDeCor>
-            <button class="btn-salvar__projeto">Salvar projeto</button>
+            <button class="btn-salvar__projeto" data-salvar>Salvar projeto</button>
         </section>
 
     </main>

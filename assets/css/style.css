@@ -38,12 +38,18 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    max-width: 1440px;
 }
 
 main {
     align-items: start;
     display: flex;
     justify-content: space-between;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {

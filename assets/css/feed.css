@@ -11,6 +11,7 @@
     border-radius: 8px;
     width: 470px;
     margin-bottom: 23px;
+    position: relative;
 }
 
 .card__container:nth-child(2n+1) {
@@ -19,12 +20,11 @@
 
 .codigo__container {
     border-radius: 8px;
-    padding: 10px 24px;
+    padding: 24px 24px;
     top: 0;
 }
 
 .codigo {
-    display: block;
     background: #141414;
     border-radius: 8px;
     border: none;
@@ -67,8 +67,11 @@
     padding-left: 24px;
     opacity: 0;
     padding-bottom: 24px;
-    transition: all .4s;
+    position: absolute;
+    transition: all .5s;
     width: 470px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    z-index: 1;
 }
 
 .acoes span {
@@ -114,8 +117,10 @@
 }
 
 .card__container:hover .acoes {
+    background:  rgba(8, 15, 31, 0.4);
     bottom: -74px;
     opacity: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .card__container:hover .descricao {

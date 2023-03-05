@@ -1,7 +1,7 @@
 const tagCor = document.querySelector('[data-seletorDeCor]')
 const fundo = document.querySelector('[data-fondoEditor]')
 
-const editor = document.querySelector('[data-editor]')
+const exportar = document.querySelector('[data-exportar]')
 
 function alterarCorDeFundo() {
     const cor = tagCor.value
@@ -10,4 +10,13 @@ function alterarCorDeFundo() {
 
 tagCor.addEventListener('focusout', () => {
     alterarCorDeFundo()
+})
+
+function downloadImageCode() {
+    
+}
+
+exportar.addEventListener('click', () => {
+    //downloadImageCode()
+    console.log(exportar.textContent)
 })

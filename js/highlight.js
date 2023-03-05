@@ -5,7 +5,7 @@ const btnHighlight = document.querySelector('[data-aplicarHighlight]')
 function aplicarHighlight() {
     const codigo = areaDoCodigo.innerText
     areaDoCodigo.innerHTML = `
-    <code class="editor hljs ${linguagem}" aria-label="Editor de código" autofocus contenteditable="true" data-editor></code>
+    <code class="editor hljs ${linguagem.vlue}" aria-label="Editor de código" autofocus contenteditable="true" data-editor></code>
     `
     areaDoCodigo.querySelector('code').textContent = codigo
     console.log(areaDoCodigo)

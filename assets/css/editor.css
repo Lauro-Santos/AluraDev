@@ -45,6 +45,11 @@
     outline: none;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .botao-highlight {
     background: var(--cor-elemento-sec-normal);
     border: none;
@@ -52,7 +57,7 @@
     color: #ffffff;
     height: 56px;
     margin-top: 10px;
-    width: 100%;
+    width: 48%;
     transition: all .3s;
 }
 

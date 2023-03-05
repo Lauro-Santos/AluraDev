@@ -71,6 +71,66 @@ const unfold = (f, seed) => {
                 </div>
             </div>
 
+            <div class="card__container">
+                <div class="codigo__container" style="background: #ff0000;">
+                <pre><code class="codigo hlsj javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc;
+    }   return go(f, seed, [])
+}</code></pre>
+                </div>
+                <div class="descricao">
+                    <h2>Título do projeto</h2>
+                    <p>Essa é a descrição do meu projeto.</p>
+                </div>
+                <div class="acoes">
+                    <div>
+                        <span><i class="fa-solid fa-comment"></i> 9</span>
+                        <span><i class="fa-solid fa-heart"></i> 9</span>
+                    </div>
+                    <a href="#" class="user">
+                        <img src="https://assets.afcdn.com/story/20160810/952148_w1888h1060c1cx511cy250.jpg"
+                            width="24px" height="24px">
+                        <p>@Nome</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card__container">
+                <div class="codigo__container" style="background: #ff0000;">
+                <pre><code class="codigo hlsj javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc;
+    }   return go(f, seed, [])
+}</code></pre>
+                </div>
+                <div class="descricao">
+                    <h2>Título do projeto</h2>
+                    <p>Essa é a descrição do meu projeto.</p>
+                </div>
+                <div class="acoes">
+                    <div>
+                        <span><i class="fa-solid fa-comment"></i> 9</span>
+                        <span><i class="fa-solid fa-heart"></i> 9</span>
+                    </div>
+                    <a href="#" class="user">
+                        <img src="https://assets.afcdn.com/story/20160810/952148_w1888h1060c1cx511cy250.jpg"
+                            width="24px" height="24px">
+                        <p>@Nome</p>
+                    </a>
+                </div>
+            </div>
+
         </section>
     </main>
 
