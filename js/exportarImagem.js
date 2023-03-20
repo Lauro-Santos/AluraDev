@@ -4,9 +4,6 @@ const botaoExportar = document.querySelector("[data-exportar]")
 function htmlToImage() {
     domtoimage.toPng(node)
         .then(function (dataUrl) {
-            // var img = new Image();
-            // img.src = dataUrl;
-            // document.body.appendChild(img);
             document.querySelector("[data-imagem]").src = dataUrl
             imgUrl = dataUrl
         })
