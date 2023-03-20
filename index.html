@@ -42,7 +42,7 @@
         <section class="areaDeEdicao">
 
             <!--    -Editor de codigo-    -->
-            <div class="editor__container" data-fondoEditor>
+            <div class="editor__container" data-fondo-editor>
                 <span class="bulets">
                     <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#FF5F56" />
@@ -80,11 +80,22 @@
             <button class="btn-salvar__projeto" data-salvar>Salvar projeto</button>
         </section>
 
+        <div class="poupop" data-poupop>
+            
+            <div class="imagem__conteiner">
+                <img src="" alt="Código" data-imagem>
+                <button class="salvar" onclick="imgDownload()">Salvar</button>
+                <button class="fechar" data-fechar><i class="fa-solid fa-xmark-large">x</i></button>
+            </div>
+        </div>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="js/highlight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/exportarImagem.js"></script>
 </body>
 
 </html>

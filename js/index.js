@@ -12,11 +12,3 @@ tagCor.addEventListener('focusout', () => {
     alterarCorDeFundo()
 })
 
-function downloadImageCode() {
-    
-}
-
-exportar.addEventListener('click', () => {
-    //downloadImageCode()
-    console.log(exportar.textContent)
-})

@@ -1,0 +1,60 @@
+.poupop {
+    display: none;
+    text-align: center;
+    position: absolute;
+    padding: 5% 20%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 3;
+}
+
+.fechar {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 13%;
+    right: 21%;
+}
+
+.fechar i {
+    font-size: 1.5rem;
+    color: var(--cor-elemento-normal);
+}
+
+.fechar:active i {
+    color: var(--cor-elemento-focus);
+}
+
+.imagem__conteiner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo);
+    border-radius: 10px;
+}
+.imagem__conteiner img {
+    margin-top: 20px;
+    height: 400px;
+    width: auto;
+}
+
+.salvar {
+    background: var(--cor-elemento-sec-normal);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    height: 56px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 48%;
+    transition: all .3s;
+}
+
+.salvar:hover {
+    background: var(--cor-elemento-sec-hover);
+}
+
+.salvar:active {
+    border: var(--sec-borda);
+}
