@@ -22,6 +22,11 @@ Um produtor de conteúdo de programação solicitou a construção de um editor 
 
 As principais funcionalidades pedidas são: um campo para selecionar a linguagem a ser escrita; um campo de texto para escrever o código em si; e um botão para visualização deste código com o sintaxe highlight com um tema bem bonito. É importante que esse projeto seja escalável, ao ponto que, se for necessário adicionar alguma funcionalidade (feature), seja simples fazê-la. Como esse editor é online, é de extrema importância que ele seja responsivo.
 
+### Implementações adicionais
+Foi adicionado uma função pra exportar o código estilizado no formato 'png', utilizando modulo node.js, a biblioteca "dom-to-image".
+
+![](https://raw.githubusercontent.com/Lauro-Santos/AluraDev/master/assets/img/Captura%20de%20tela%202023-03-20%20123553.jpg#vitrinedev)
+
 ## Deploy
 
 > https://alura-dev-iota.vercel.app/index.html
