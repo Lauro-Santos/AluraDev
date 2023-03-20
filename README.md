@@ -26,6 +26,7 @@ As principais funcionalidades pedidas são: um campo para selecionar a linguagem
 Foi adicionado uma função pra exportar o código estilizado no formato 'png', utilizando modulo node.js, a biblioteca "dom-to-image".
 
 ![](https://raw.githubusercontent.com/Lauro-Santos/AluraDev/master/assets/img/Captura%20de%20tela%202023-03-20%20123553.jpg#vitrinedev)
+![](https://raw.githubusercontent.com/Lauro-Santos/AluraDev/master/assets/img/code.png#vitrinedev)
 
 ## Deploy
 
